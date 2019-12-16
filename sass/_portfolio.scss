@@ -1,0 +1,80 @@
+.portfolio {
+  padding: 8rem 0;
+  text-align: center;
+
+  &__project{
+    &:not(:last-child)::after{
+      display: block;
+      content: '';
+      height: 2px;
+      width: 90%;
+      background-color: var(--text-color);
+      margin: 14rem auto;
+      margin-top: 3rem;
+    }
+  }
+
+  &__heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    &:not(:first-child){
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__img{
+    width: 40%;
+    margin: 0 auto;
+
+    @media only screen and(max-width: 900px){
+      width: 60%;
+    }
+    
+
+    &-real{
+      margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0,0,0, .3);
+    transition: all .2s;
+    width: 100%;
+
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 0 1rem 1rem rgba(0,0,0, .7)
+    }
+    }
+  }
+
+  &__built{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+    .icon:not(:first-child){
+      margin-left: 1rem;
+    }
+
+    &:after{
+      display: block;
+      content: '';
+      height: 2px;
+      width: 80%;
+      background-color: var(--text-color);
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
+  &__summary{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: center;
+  }
+}

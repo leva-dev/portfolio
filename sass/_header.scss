@@ -1,0 +1,113 @@
+.header{
+  background-color: var(--dark-purple);
+  color: #f0f0f0;
+  padding: 13rem 0;
+  border-radius: 0 0 85% 85% / 30%;
+
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    width: 80%;
+    margin: 0 auto;
+
+    @media only screen and(max-width: 900px){
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      grid-gap: 3rem;
+
+      width: 95%;
+      text-align: center;
+    }
+  }
+
+  &__content{
+    align-self: center;
+
+    @media only screen and(max-width: 900px){
+      align-self: flex-start;
+    }
+  }
+
+  &__paragraph{
+    font-size: 2rem;
+  }
+
+  &-carousel{
+    color: var(--color-primary);
+
+    &::before{
+      content: 'developer';
+      animation: carousel 8s infinite;
+      animation-delay: 1.5s;
+    }
+  }
+
+
+  &__img{
+    width: 85%;
+    height: 85%;
+
+    @media only screen and(max-width: 900px){
+      justify-self: center;
+
+      width: 50%;
+      height: 50%;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &__social{
+      margin-top: 4rem;
+      font-size: 4rem;
+
+      &-link{
+        padding: .7rem;
+        color: #f0f0f0d8;
+        transition: .2s all;
+      }
+  }
+}
+
+@keyframes carousel{
+  0%{
+    opacity: 1;
+    content: 'developer';
+  }
+
+  12%{
+    opacity: 0;
+  }
+  
+  33%{
+    opacity: 1;
+    content: 'designer';
+  }
+
+  45%{
+    opacity: 0;
+  }
+
+  67%{
+    opacity: 1;
+    content: 'enthusiast';
+  }
+
+  79%{
+    opacity: 0;
+  }
+}
+
+.linkedin:hover{
+  color: #2867B2;
+  transform: translateY(5rem);
+}
+
+.github:hover{
+  color: #6e5494;
+  transform: translateY(5rem);
+}

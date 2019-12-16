@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Solway:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Andrej Leventic</title>
+</head>
+<body>
+  <div class="loader">
+    <img src="img/loader.gif" alt="Loading..." class="loader__img">
+  </div>
+
+  <div class="navbar">
+    <div class="container navbar__container">
+      <span class="navbar__item"><p class="navbar__link about-link navbar__link-active">About</p></span>
+      <span class="navbar__item"><p class="navbar__link portfolio-link">Portfolio</p></span>
+      <span class="navbar__item"><p class="navbar__link contact-link">Contact</p></span>
+      <span class="navbar__item"><a href="https://drive.google.com/file/d/1LZpTUDY7o8xA9NY2pX9BJMBkerWpRpml/view?usp=sharing" target="_blank" class="navbar__link">Resume &nbsp;<i class="fas fa-long-arrow-alt-down"></i></a></span>
+
+      <input type="checkbox" id="switch" name="theme">
+      <label for="switch" class="switch-label">
+        <div class="toggle"></div>
+      </label>
+    </div>
+  </div>
+    
+    <main>
+      <header class="section header" id="about">
+        <div class="header__container">
+          <div class="header__content">
+            <h1 class="heading-primary">Andrej Leventic</h1>
+            <h2 class="heading-secondary">A web <span class="header-carousel"></span></h2>
+            <p class="header__paragraph">who focuses on making products that solve real world problems and make an immediate impact.</p>
+            <div class="header__social">
+              <a class="header__social-link github" href="#"><i class="fab fa-github"></i></a>
+              <a class="header__social-link linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="header__img">
+            <img src="img/developer.svg" alt="Developer Illustration">
+          </div>
+        </div>
+      </header>
+
+      <section class="section portfolio" id="portfolio">
+        <h2 class="heading-secondary u-margin-bottom">Portfolio</h2>
+        <div class="portfolio__project">
+          <h3 class="portfolio__heading">Project 1</h3>
+
+          <div class="portfolio__img"><a href="#" target="_blank"><img src="img/web-1.gif" alt="Project image" class="portfolio__img-real"></a></div>
+
+
+          <h5 class="portfolio__heading">Built with:</h5>
+
+          <div class="portfolio__built">
+            <i class="fab fa-html5 icon html"></i>
+            <i class="fab fa-sass icon sass"></i>
+            <i class="fab fa-js-square icon js"></i>
+          </div>
+
+          <h5 class="portfolio__heading">Summary</h5>
+          <p class="portfolio__summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat cumque dignissimos fugiat doloremque delectus, veritatis voluptatibus blanditiis adipisci fugit. Repudiandae dignissimos assumenda laboriosam aperiam nisi optio iure magnam beatae sit consequuntur, nihil deleniti nobis ducimus eum libero quia id, vel labore possimus aliquam provident odio? Fugiat odio placeat deleniti ipsum!</p>
+          <div class="portfolio__buttons">
+            <a href="#" class="btn btn-preview"><i class="fas fa-eye btn-icon"></i>Demo</a>
+            <a href="#" class="btn btn-code"><i class="fas fa-code btn-icon"></i></i>Code</a>
+          </div>
+        </div>
+
+        <div class="portfolio__project">
+          <h3 class="portfolio__heading">Project 1</h3>
+
+          <div class="portfolio__img"><a href="#" target="_blank"><img src="img/web-1.gif" alt="Project image" class="portfolio__img-real"></a></div>
+
+          <h5 class="portfolio__heading">Built with:</h5>
+
+          <div class="portfolio__built">
+            <i class="fab fa-html5 icon html"></i>
+            <i class="fab fa-sass icon sass"></i>
+            <i class="fab fa-js-square icon js"></i>
+          </div>
+
+          <h5 class="portfolio__heading">Summary</h5>
+          <p class="portfolio__summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat cumque dignissimos fugiat doloremque delectus, veritatis voluptatibus blanditiis adipisci fugit. Repudiandae dignissimos assumenda laboriosam aperiam nisi optio iure magnam beatae sit consequuntur, nihil deleniti nobis ducimus eum libero quia id, vel labore possimus aliquam provident odio? Fugiat odio placeat deleniti ipsum!</p>
+          <div class="portfolio__buttons">
+            <a href="#" class="btn btn-preview"><i class="fas fa-eye btn-icon"></i>Demo</a>
+            <a href="#" class="btn btn-code"><i class="fas fa-code btn-icon"></i></i>Code</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <h2 class="heading-secondary u-margin-bottom">Get in touch</h2>
+
+        <div class="contact__social">
+          <div class="contact__social-container"><a class="contact__social-link github" href="#"><i class="fab fa-github"></i></a></div>
+          <div class="contact__social-container"><a class="contact__social-link linkedin" href="#"><i class="fab fa-linkedin"></i></a></div>    
+        </div>
+
+        <form class="contact__form" netlify>
+          <input name="name" type="text" class="contact__area" placeholder="Name" required>   
+          <input name="email" type="text" class="contact__area" placeholder="Email" required>
+          <textarea name="message" class="contact__area" placeholder="Message" required></textarea>
+          <input type="submit" value="SUBMIT" class="contact__submit" href="#">
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__paragraph">&copy;Designed and developed by <span class="footer__span">ANDREJ LEVENTIC</span>.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://kit.fontawesome.com/e4376f77b0.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

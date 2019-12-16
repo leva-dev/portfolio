@@ -1,0 +1,100 @@
+.contact{
+  background-color: var(--background-color-light);
+  padding: 5rem 0;
+  text-align: center;
+
+  &__form{
+    max-width:420px;
+    margin:5rem auto;
+
+    @media only screen and(max-width: 900px){
+      width: 80%;
+    }
+  }
+
+  &__area{
+    color:var(--text-color);
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid var(--color-primary);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline: 0;
+  
+    &:focus{
+      border:2px solid var(--color-primary);
+    }
+  }
+
+  &__submit{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:var(--color-primary);;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+
+    &:hover{
+      background: var(--dark-purple);
+    }
+  }
+
+  &__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 4rem;
+
+    &-container{
+      padding: 2rem;
+      background-color: var(--text-color);
+      transition: all .2s ease;
+      border-radius: 5px;
+
+      &:first-child{
+        margin-right: 3rem;
+      }
+
+      &:hover{
+        border-radius: 355px;
+        transform: rotate(360deg);
+      }
+    }
+
+    &-link{
+      color: var(--background-color-light);
+      padding: 1rem;
+    }
+  }
+
+  &__social-container:hover .github{
+    color: #6e5494;
+  }
+
+  &__social-container:hover .linkedin{
+    color: #2867B2;
+  }
+
+  
+
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}

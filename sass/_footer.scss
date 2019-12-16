@@ -1,0 +1,27 @@
+.footer{
+  padding: 5rem 0;
+
+  background-color: #1a1a1a;
+  color: #4d4d4d;
+  font-size: 1.4rem;
+
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__paragraph{
+    &::before{
+      content: '';
+      background-color: #4d4d4d;
+      height: 6px;
+      width: 12rem;
+    }
+  }
+
+  &__span{
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+}
